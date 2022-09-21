@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: hello
-        image: acgtes/gitops:hellov1.1
+        image: acgtes/gitops:hellov1.2
