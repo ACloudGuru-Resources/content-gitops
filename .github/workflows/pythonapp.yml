@@ -1,7 +1,7 @@
 name: Python application
 
 on:
-  pull-request:
+  push-request:
     paths:
     - 'python/*'
       
