@@ -25,5 +25,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "gbalo" --password-stdin
-        docker image build -t gbalo/gitops:hellov1.6 .
-        docker push gbalo/gitops:hellov1.6
+        docker image build -t gbalo/gitops:hellov1.7 .
+        docker push gbalo/gitops:hellov1.7
