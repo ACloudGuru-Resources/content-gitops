@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: idev-2023/gitops:hellov1.1
+        image: skkoobb/gitops:hellov1.1
         ports:
         - containerPort: 80
