@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: skkoob/acg-tes:hellov1.1
+        image: skkoob/gitops:hellov1.3
         ports:
         - containerPort: 80
