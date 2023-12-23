@@ -23,5 +23,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "${{ secrets.DOCKERSVCACC }}" --password-stdin
-        docker image build -t ${{ secrets.DOCKERSVCACC }}/gitops-practice:hellov1.1 .
-        docker push ${{ secrets.DOCKERSVCACC }}/gitops-practice:hellov1.1
+        docker image build -t ${{ secrets.DOCKERSVCACC }}/gitops:hellov1.1 .
+        docker push ${{ secrets.DOCKERSVCACC }}/gitops:hellov1.1
