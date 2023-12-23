@@ -2,8 +2,7 @@
 
 on:
   push:
-    paths:
-    - 'python/*'
+    branches: [ "master" ]
       
 jobs:
   build:
