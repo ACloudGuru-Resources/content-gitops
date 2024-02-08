@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: autobot
+  namespace: namespace-workflow-1707392391644
+spec:
+  type: LoadBalancer
+  selector:
+    app: autobot
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
