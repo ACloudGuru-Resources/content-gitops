@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: autobot
+  labels:
+    app: autobot
+  namespace: namespace-workflow-1707392391644
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: autobot
+  template:
+    metadata:
+      labels:
+        app: autobot
+    spec:
+      containers:
+        - name: autobot
+          image: fluxlab.azurecr.io/image-workflow-1707392391644:latest
+          ports:
+            - containerPort: 8000
